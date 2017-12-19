@@ -1,6 +1,7 @@
 
 ## 1、需求分析
 在饿了么首页中我们能看到这样的布局（如下图）。红框内是一个可以左右滑动的页面，每一个页面类似于九宫格，都有可供点击图标。对于这样的布局，我在网上找了很久都没有找到相关的名称，所以我这里暂时叫它导航页吧。
+
 ![饿了么首页](http://img.blog.csdn.net/20170327095341827?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGluZHJvaWQyMA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 最近公司的项目就要求我实现一个这样的布局，但是我们的图标并不是想饿了么这样是固定的，所以在饿了么的布局上还要加一个效果：在图标数目无法排满两行时，就只显示一行。比如说，我们每一页最多可以显示两行和四列，当图标的总数目小于或等于4个时就只显示出一行，第二行就不要了。这样页面就不至于留出太多的空白。
@@ -12,6 +13,7 @@
 4. 单选事件：选中图标后，图标变为完全不透明。
 
 明白需求之后，我们穿越时空看看最后实现后的布局：
+
 ![这里写图片描述](http://img.blog.csdn.net/20170327095552718?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGluZHJvaWQyMA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 图片资源大家可以在我源码中找到。
@@ -770,5 +772,7 @@ setPagerViewData方法则是给页面中的每个item填充数据。首先判断
 这个功能我前前后后花了不少时间，在参考别人代码的基础上总算是实现了，水平有限，如果博客中有错漏的地方，欢迎批评指正。我的写法还是太过简单粗暴，不够精巧，而且对资源的占用也比较大，如果你有更好的方法，欢迎交流学习。听说ViewPager+GridVie也可以实现同样的效果，接下来我再研究一下，看能不能再写一篇博客吧！
 
 最后是源码下载地址：
+
 [GitHub](https://github.com/Lindroy/NavigationPager "GitHub")
+
 [CSDN](http://download.csdn.net/detail/lindroid20/9794887 "CSDN")
